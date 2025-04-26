@@ -3,7 +3,7 @@
 #include <limits.h>
 using namespace std;
 
-int findMaxDivisibleBy3(const vector<int>& arr) {
+int isMaxDivisibleBy3(const vector<int>& arr) {
     int maxNumber = INT_MIN;
     for (int num : arr) {
         if (num % 3 == 0 && num > maxNumber) {
@@ -30,9 +30,9 @@ int main() {
         cin >> arr[i];
     }
 
-    int result = findMaxDivisibleBy3(arr);
+    int result = isMaxDivisibleBy3(arr);
     if (result == INT_MIN) {
-        cout << "Khon co so nao trong mang chi het cho 3!" << endl;
+        cout << "Khong co so nao trong mang chi het cho 3!" << endl;
     } else {
         cout << "So lon nhat trong mang chia het cho 3 la: " << result << endl;
     }

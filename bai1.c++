@@ -10,7 +10,7 @@ bool isPrime(int n) {
     return true;
 }
 
-void printPrimesLessThanN(int N) {
+void soNguyenTo(int N) {
     cout << "Cac so nguyen to nho hon " << N << " la: ";
     for (int i = 2; i < N; i++) {
         if (isPrime(i)) {
@@ -26,6 +26,6 @@ int main() {
     int n;
     cout << "Nhap so n:";
     cin >> n;
-    printPrimesLessThanN(nn);
+    soNguyenTo(n);
     return 0;
 }

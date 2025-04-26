@@ -1,16 +1,15 @@
 #include <iostream>
 #include <vector>
-#include <limits.h>
+#include <set> 
 using namespace std;
 
-int isMaxDivisibleBy3(const vector<int>& arr) {
-    int maxNumber = INT_MIN;
+
+int demSoLuong(const vector<int>& arr) {
+    set<int> distinctValues; 
     for (int num : arr) {
-        if (num % 3 == 0 && num > maxNumber) {
-            maxNumber = num;
-        }
+        distinctValues.insert(num); 
     }
-    return maxNumber;
+    return distinctValues.size();
 }
 
 int main() {
@@ -23,19 +22,15 @@ int main() {
             cout << "Nhap lai: "
         }
     }
-    
+
     vector<int> arr(n);
     cout << "Nhap cac phan tu cua mang n: ";
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
 
-    int result = isMaxDivisibleBy3(arr);
-    if (result == INT_MIN) {
-        cout << "Khong co so nao trong mang chi het cho 3!" << endl;
-    } else {
-        cout << "So lon nhat trong mang chia het cho 3 la: " << result << endl;
-    }
+    int distinctCount = demSoLuong(arr);
+    cout << "So luong cac gia tri phan biet trong mang la: " << distinctCount << endl;
 
     return 0;
 }

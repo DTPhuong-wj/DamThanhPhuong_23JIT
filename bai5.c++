@@ -6,7 +6,7 @@ int fibonacci(int n) {
     return fibonacci(n - 1) + fibonacci(n - 2); 
 }
 
-void printFibonacciSequence(int n) {
+void printFibonacci(int n) {
     if (n <= 0 || n > 30) {
         cout << "Nhap n (1 <= n <= 30)." << endl;
         return;
@@ -22,6 +22,6 @@ int main() {
     int n;
     cout << "Nhap n (1 <= n <= 30): ";
     cin >> n;
-    printFibonacciSequence(n);
+    printFibonacci(n);
     return 0;
 }

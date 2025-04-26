@@ -38,7 +38,7 @@ void inSinhVienDiemTB8(const vector<SinhVien>& ds) {
             cout << "Ten: " << sv.ten << endl;
             cout << "Diem toan: " << sv.diemToan << ", Diem ly: " << sv.diemLy
                  << ",Diem hoa: " << sv.diemHoa << endl;
-            cout << "Diem trung binhbinh: " << sv.diemTB << endl;
+            cout << "Diem trung binh: " << sv.diemTB << endl;
         }
     }
 }
@@ -50,7 +50,7 @@ int main() {
             cout << "Nhap so luong sinh vien: ";
             cin >> n;
         } elsse {
-            cout << "Nhap lai (la 1 so nguyen)"
+            cout << "Nhap lai: "
         }
     }
     
